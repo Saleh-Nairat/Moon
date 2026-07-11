@@ -40,7 +40,12 @@ img{
 .header{
     padding: 21.84px 0;
     margin-bottom: 21.84px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
 }
+
+
 
 .list ul{
     display: flex;
@@ -58,6 +63,18 @@ img{
     flex-wrap: wrap;
     list-style-type: none;
     gap: 24px;
+}
+
+.hero-section{
+    background-image: url('./imgs/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.collection-section{
+    margin-top: 80px;
 }
 
 .collection{
