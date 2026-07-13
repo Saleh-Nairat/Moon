@@ -43,6 +43,7 @@ img{
     position: fixed;
     width: 100%;
     background-color: #fff;
+    z-index: 9;
 }
 
 
@@ -80,6 +81,50 @@ img{
 .collection{
     text-align: center;
     width: calc((100% - 90px) / 4);
+}
+
+.collection .collection-img{
+    position: relative;
+}
+
+.collection .collection-img img{
+    display: block;
+}
+
+.details{
+    position: absolute;
+
+    /* top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; */
+
+    /* same effect*/
+
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    opacity: 0;
+    transition: .3s;
+}
+
+.collection .collection-img h2{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.collection .collection-img a{
+    font-size: 18px;
+    color: white;
+}
+
+.collection:hover .collection-img .details{
+    opacity: .8;
 }
 
 @media screen and (min-width:801px) and (max-width:1300px){
